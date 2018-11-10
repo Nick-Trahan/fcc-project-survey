@@ -15,7 +15,7 @@
       <div id="desc-div">
         <p id="description">Description Goes Here</p>
       </div>
-      <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+      <form id="survey-form" method="GET" action="#">
         <div class="rowTab">
           <div class="l-div">
             <label id="name-label" for="name">Name</label>
@@ -42,14 +42,32 @@
         </div>
         <div class="rowTab">
           <div class="l-div">
+           <label id="dropdown-label" for="dropdown">Select an Option</label>
           </div>
           <div class="r-div">
+            <select id="dropdown" name="dropdown">
+              <option disabled value>Choose one</option>
+              <option value="optOne">Option One</option>
+              <option value="optTwo">Option Two</option>
+              <option vaule="optThree">Option Three</option>
+              <option value="optionFour">Option Four</option>
+            </select>
           </div>
         </div>
         <div class="rowTab">
           <div class="l-div">
+            <label id="radio-label" for="radio">Choose One</label>
           </div>
           <div class="r-div">
+            <label for="radioOne">
+              <input id="radioOne" type="radio" value="radioOne" name="radio">Button One</input>
+            </label>
+            <label for="radioTwo">
+              <input id="radioTwo" type="radio" value="radioTwo" name="radio">Button Two</input>
+            </label>
+            <label for="radioThree">
+              <input id="radioThree" type="radio" value="radioThree" name="radio">Button Three</input>
+            </label>
           </div>
         </div>
         <div class="rowTab">
