@@ -39,7 +39,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  /* margin: 0.67em 0; */
 }
 
 b,
@@ -219,4 +219,30 @@ textarea {
 
 [hidden] {
   display: none;
+}
+
+/* Begin custom css
+   ========================================================================= */
+
+#container {
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+#title {
+  margin-top: 0em;
+  padding-top:  0.67em;
+  text-align: center;
+}
+
+#main {
+  position: relative;
+  background-color: white;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+#description {
+  text-align: center;
+  padding: 1em;
 }
