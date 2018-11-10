@@ -238,11 +238,36 @@ textarea {
 #main {
   position: relative;
   background-color: white;
-  width: 50vw;
+  width: 70vw;
   margin: 0 auto;
 }
 
 #description {
   text-align: center;
   padding: 1em;
+}
+
+.rowTab {
+}
+
+.rowTab::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.l-div {
+  float: left;
+  min-width: 49%;
+  text-align: right;
+}
+
+.r-div {
+  float: right;
+  min-width: 49%;
+}
+
+#button {
+  text-align: center;
+  padding: 1em 0;
 }
