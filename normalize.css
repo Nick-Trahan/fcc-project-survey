@@ -226,20 +226,24 @@ textarea {
 
 #container {
   background-color: aliceblue;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 3em;
 }
 
 #title {
   margin-top: 0em;
   padding-top:  0.67em;
   text-align: center;
+  font-size: 3em;
 }
 
 #main {
   position: relative;
   background-color: white;
-  width: 70vw;
+  max-width: 800px;
   margin: 0 auto;
+  font-size: 1.25em;
+  font-family: Arial, sans-serif;
 }
 
 #description {
@@ -248,6 +252,7 @@ textarea {
 }
 
 .rowTab {
+  padding: 0.75em 0;
 }
 
 .rowTab::after {
@@ -267,7 +272,36 @@ textarea {
   min-width: 49%;
 }
 
+.radios {
+  line-height: 2em;
+}
+
+#radioOne {
+  height: 17px;
+}
+
+#radioTwo {
+  height: 17px;
+}
+
+
+#radioThree {
+  height: 17px;
+}
+
+#checkOne {
+  height: 17px;
+}
+
+#checkTwo {
+  height: 17px;
+}
+
+#checkThree {
+  height: 17px;
+}
+
 #button {
   text-align: center;
-  padding: 1em 0;
+  padding: 0.25em 0 1em 0;
 }
