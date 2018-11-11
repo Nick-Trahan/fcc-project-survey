@@ -239,6 +239,7 @@ textarea {
 
 #main {
   position: relative;
+  border-radius: 10px;
   background-color: white;
   max-width: 800px;
   margin: 0 auto;
@@ -248,11 +249,12 @@ textarea {
 
 #description {
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
+  margin: 0;
 }
 
 .rowTab {
-  padding: 0.75em 0;
+  padding-bottom: 1em;
 }
 
 .rowTab::after {
@@ -303,5 +305,5 @@ textarea {
 
 #button {
   text-align: center;
-  padding: 0.25em 0 1em 0;
+  padding-bottom: 1em;
 }
