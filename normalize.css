@@ -292,11 +292,19 @@ textarea {
   font-size: 0.85em;
 }
 
-#name, #email, #number, #textarea, #dropdown {
+#name, #email, #number, #dropdown, #textarea {
   font-size: 0.85em;
   padding: 10px 10px;
   border: 1px solid lightgrey;
   border-radius: 5px;
+}
+
+#number {
+  width: 186px;
+}
+
+#dropdown {
+  background-color:aliceblue
 }
 
 #textarea {
