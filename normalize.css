@@ -105,7 +105,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  -webkit-appearance: none;
 }
 
 /**
@@ -227,7 +227,7 @@ textarea {
 #container {
   background-color: aliceblue;
   min-height: 100vh;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 #title {
@@ -240,6 +240,7 @@ textarea {
 #main {
   position: relative;
   border-radius: 10px;
+  border: 2px solid #84c4fe;
   background-color: white;
   max-width: 800px;
   margin: 0 auto;
@@ -274,8 +275,12 @@ textarea {
   min-width: 49%;
 }
 
+#name:focus, #email:focus, #number:focus {
+  outline: 2px solid #84c4fe;
+}
+
 .radios {
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 #radioOne {
@@ -285,7 +290,6 @@ textarea {
 #radioTwo {
   height: 17px;
 }
-
 
 #radioThree {
   height: 17px;
@@ -306,4 +310,25 @@ textarea {
 #button {
   text-align: center;
   padding-bottom: 1em;
+}
+
+#submit {
+  background-color: #84c4fe;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+ /*transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;*/
+  padding: 5px 20px;
+}
+
+#submit:hover, #submit:focus {
+  background-color: aliceblue;
+  color: #84c4fe;
+  border: 2px solid #84c4fe;
+  outline: 0;
+}
+
+#submit:active {
+  transform: scale(0.95);
 }
