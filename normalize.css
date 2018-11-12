@@ -234,7 +234,8 @@ textarea {
   margin-top: 0em;
   padding-top:  0.67em;
   text-align: center;
-  font-size: 3em;
+  font-size: 3.5em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #main {
@@ -245,7 +246,7 @@ textarea {
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.25em;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #description {
@@ -264,6 +265,13 @@ textarea {
   display: table;
 }
 
+.txt-l-div {
+  padding-top: 9px;
+  float: left;
+  min-width: 49%;
+  text-align: right;
+}
+
 .l-div {
   float: left;
   min-width: 49%;
@@ -275,36 +283,30 @@ textarea {
   min-width: 49%;
 }
 
-#name:focus, #email:focus, #number:focus {
-  outline: 2px solid #84c4fe;
+.lwr-r-div {
+  float: right;
+  min-width: 49%;
+  font-size: 0.85em;
+}
+
+#name, #email, #number, #textarea, #dropdown {
+  font-size: 0.85em;
+  padding: 10px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+#textarea {
+  resize: none;
+}
+
+#name:focus, #email:focus, #number:focus, #dropdown:focus, #textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 5px 2px #84c4fe;
 }
 
 .radios {
-  line-height: 1.5em;
-}
-
-#radioOne {
-  height: 17px;
-}
-
-#radioTwo {
-  height: 17px;
-}
-
-#radioThree {
-  height: 17px;
-}
-
-#checkOne {
-  height: 17px;
-}
-
-#checkTwo {
-  height: 17px;
-}
-
-#checkThree {
-  height: 17px;
+  line-height: 2em;
 }
 
 #button {
@@ -317,8 +319,6 @@ textarea {
   color: aliceblue;
   border: 2px solid aliceblue;
   border-radius: 5px;
- /*transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;*/
   padding: 5px 20px;
 }
 
