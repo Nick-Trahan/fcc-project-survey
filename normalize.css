@@ -299,8 +299,8 @@ textarea {
   border-radius: 5px;
 }
 
-#number {
-  width: 186px;
+#name, #email, #number, #textarea {
+  width: 190px;
 }
 
 #dropdown {
